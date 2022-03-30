@@ -1,0 +1,30 @@
+﻿<Window x:Class="Kitty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitty"
+        mc:Ignorable="d"
+        Title="Kitty" Height="1080" Width="1920">
+    <Canvas Name="Board" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="BlueViolet">
+
+        <Image Height="693" Width="719" Source="Images/Clouds.png" Tag="Cloud1" Canvas.Left="94"/>
+        <Image Height="693" Width="720" Source="Images/Clouds.png" Tag="Cloud2" Canvas.Left="1061"/>
+      
+
+
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars1" Canvas.Top="649" Canvas.Left="384"/>
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars1" Canvas.Top="-453" Canvas.Left="384" />
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars2" Canvas.Top="558" Canvas.Left="1210"/>
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars2" Canvas.Top="-503" Canvas.Left="1210" />
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars3" Canvas.Top="698" Canvas.Left="786"/>
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars3" Canvas.Top="-347" Canvas.Left="786" />
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars4" Canvas.Top="649" Canvas.Left="1629"/>
+        <Image Height="721" Width="100" Source="Images/Stars.png" Tag="Stars4" Canvas.Top="-404" Canvas.Left="1629" />
+
+        <Image Name="Cat" Height="150" Width="180" Source="Images/Cat.png"  Stretch="Fill" Canvas.Top="254" Canvas.Left="40"/>
+
+        <Label Name="Score" FontSize="30" FontWeight="ExtraBold" Content="Score: 0"/>
+
+    </Canvas>
+</Window>
